@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="col-12">
+        <table class="table table-bordered mb-4">
+            <head>
+                <tr>
+                    <th>serviceType</th>
+                    <th>serviceName</th>
+                    <th>Branch</th>
+                </tr>
+            </head>
+            <body>
+                <tr *ngFor="let serv of Financial">
+                    <td><a routerLink="param_details">{{serv.serviceType}}</a></td>
+                    <td>{{serv.serviceName}}</td>
+                    <td>{{serv.Branch}}</td>
+
+                </tr>
+            </body>
+        </table>
+    </div>
+</div>
+<
