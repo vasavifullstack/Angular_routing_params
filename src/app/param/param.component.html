@@ -10,7 +10,7 @@
             </head>
             <body>
                 <tr *ngFor="let serv of Financial">
-                    <td><a routerLink="param_details">{{serv.serviceType}}</a></td>
+                    <td><a [routerLink]="['/param_details',serv.serviceType]">{{serv.serviceType}}</a></td>
                     <td>{{serv.serviceName}}</td>
                     <td>{{serv.Branch}}</td>
 
@@ -19,4 +19,3 @@
         </table>
     </div>
 </div>
-<

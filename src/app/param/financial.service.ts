@@ -23,15 +23,18 @@ export class FinancialService{
     getServiceInfo(){
        return[{
         serviceType :1,
-        Services1 :["deposit","loans","credit"]
+        Services :["deposit","loans","credit"],
+        Branches : "hyderabad"
      },
      {
         serviceType :2,
-        Services2 : ["contract","premium","coverage","claim"]
+        Services : ["contract","premium","coverage","claim"],
+        Branches : "bangolore"
      },
      {
         serviceType :3,
-        Services3 :["GST","TDS","TCS"]
+        Services :["GST","TDS","TCS"],
+        Branches : "chennai"
      } ];
 
         

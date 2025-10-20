@@ -1,1 +1,21 @@
-<p>param-details works!</p>
+<div class="container">
+    <div class="col-12">
+        <table class="table table-bordered mb-4">
+            <head>
+                <tr>
+                    <th>serviceType</th>
+                    <th>serviceName</th>
+                    <th>Branch</th>
+                </tr>
+            </head>
+            <body>
+                <tr *ngFor="let serv of selectedService">
+                    <td>{{serv.serviceType}}</td>
+                    <td>{{serv.Services}}</td>
+                    <td>{{serv.Branches}}</td>
+
+                </tr>
+            </body>
+        </table>
+    </div>
+</div>

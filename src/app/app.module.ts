@@ -23,7 +23,7 @@ const financial : Routes=[{
 
   },
 {
-    path : 'param-details',
+    path : 'param_details/:serviceType',
     component : ParamDetailsComponent,
 }
 ]
