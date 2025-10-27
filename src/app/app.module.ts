@@ -23,9 +23,13 @@ const financial : Routes=[{
 
   },
 {
-    path : 'param_details/:serviceType',
+    path : 'param_details',
     component : ParamDetailsComponent,
-}
+},
+// {
+//     path : 'param_details',
+//     component : ParamDetailsComponent,
+// }
 ]
 
 @NgModule({
