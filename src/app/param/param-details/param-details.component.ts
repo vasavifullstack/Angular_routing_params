@@ -12,15 +12,15 @@ export class ParamDetailsComponent implements OnInit{
   selectedService :any;
   paramInfo :any
   ngOnInit(): void {
-  //   this.activateRoute.params.subscribe((result:any)=>{
-  //     console.log(result);
-  //     this.paramInfo = result;
-  //     let customerList=this.financial.getServiceInfo();
-  //     this.selectedService=customerList.filter((sERvice:any)=>{
-  //       return sERvice.serviceType == Number(result.serviceType);
-  //     });
+    this.activateRoute.params.subscribe((result:any)=>{
+      console.log(result);
+      this.paramInfo = result;
+      let customerList=this.financial.getServiceInfo();
+      this.selectedService=customerList.filter((sERvice:any)=>{
+        return sERvice.serviceType == Number(result.serviceType);
+      });
 
-  //   })
+    })
 // this.activateRoute.queryParams.subscribe((result:any)=>{
 //       console.log("Query Param map",result);
 //       let customerList=this.financial.getServiceInfo();
@@ -28,13 +28,13 @@ export class ParamDetailsComponent implements OnInit{
 //         return sERvice.serviceType == Number(result.ID);
 //       });
 //     })
-this.activateRoute.fragment.subscribe((result:any)=>{
-      console.log("fragment",result);
- let customerList=this.financial.getServiceInfo();
-     this.selectedService=customerList.filter((sERvice:any)=>{
-        return sERvice.serviceType == result;
-  });
- })
+// this.activateRoute.fragment.subscribe((result:any)=>{
+//       console.log("fragment",result);
+//  let customerList=this.financial.getServiceInfo();
+//      this.selectedService=customerList.filter((sERvice:any)=>{
+//         return sERvice.serviceType == result;
+//   });
+//  })
     
     
   }

@@ -14,6 +14,7 @@ export class ParamComponent implements OnInit {
  
 ngOnInit(): void {
   this.Financial=this.financial.getFinancialServices()
+  
 }
 evtNavigation(serviceType:any){
   //pass based on the params

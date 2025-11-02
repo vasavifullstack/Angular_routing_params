@@ -8,6 +8,7 @@ import { FinancialService } from './param/financial.service';
 import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './menu/menu.component';
 import { ParamDetailsComponent } from './param/param-details/param-details.component';
+import { authorGuard } from './author.guard';
 
 const financial : Routes=[{
   path : 'param',
@@ -23,8 +24,9 @@ const financial : Routes=[{
 
   },
 {
-    path : 'param_details',
+    path : 'param_details/:serviceType',
     component : ParamDetailsComponent,
+    canActivate :[authorGuard]        //array for creating multiple guards.
 },
 // {
 //     path : 'param_details',
